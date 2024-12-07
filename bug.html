@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This script attempts to modify the content of a div element
+    // that hasn't been fully loaded yet.  This can lead to unexpected behavior.
+    document.getElementById("myDiv").innerHTML = "Hello World!"; 
+  </script>
+</body>
+</html>
