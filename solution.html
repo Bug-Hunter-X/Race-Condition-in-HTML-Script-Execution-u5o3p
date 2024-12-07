@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Using DOMContentLoaded event to ensure the script only executes
+    // once the DOM is completely loaded.
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("myDiv").innerHTML = "Hello World!";
+    });
+  </script>
+</body>
+</html>
